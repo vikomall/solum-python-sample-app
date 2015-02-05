@@ -6,6 +6,6 @@ artifacts:
   artifact_type: heroku
   content:
     href: https://github.com/murali44/solum-python-sample-app.git
-  language_pack: 4e71ad21-7a06-4703-996d-759da84d808c
+  language_pack:  31a52ce2-00e2-40df-b98f-27fc3564f3b2
   unittest_cmd: pip install -r test-requirements.txt; pep8 app.py
   run_cmd: ./main.sh
