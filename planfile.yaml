@@ -1,11 +1,10 @@
 version: 1
-name: cherrypy
-description: test python web app
+name: python-sample-app
+description: Sample Python web app.
 artifacts:
-- name: web
+- name: python-sample-app
   artifact_type: heroku
   content:
-    href: https://github.com/murali44/solum-python-sample-app.git
-  language_pack:  28044475-cdcc-48b4-97b9-7865e377789c 
+    href: https://github.com/rackspace-solum-samples/solum-python-sample-app.git
   unittest_cmd: pip install -r test-requirements.txt; pep8 app.py
   run_cmd: ./main.sh
