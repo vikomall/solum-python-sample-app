@@ -8,3 +8,4 @@ artifacts:
   language_pack: python27
   unittest_cmd: pip install -r test-requirements.txt; pep8 app.py
   run_cmd: ./main.sh
+  ports: 80
