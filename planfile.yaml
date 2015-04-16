@@ -7,5 +7,5 @@ artifacts:
     href: https://github.com/rackspace-solum-samples/solum-python-sample-app.git
   language_pack: python27
   unittest_cmd: pip install -r test-requirements.txt; pep8 app.py
-  run_cmd: ./main.sh
+  run_cmd: python app.py
   ports: 80
