@@ -1,4 +1,5 @@
 import os
+import socket
 
 import cherrypy
 from jinja2 import Environment, FileSystemLoader
@@ -10,7 +11,8 @@ ENV = Environment(loader=FileSystemLoader('templates'))
 def get_params():
     params = {'key': os.environ.get('key', ''),
               'user': os.environ.get('user', ''),
-              'password': os.environ.get('password', '')}
+              'password': os.environ.get('password', ''),
+              'container': socket.gethostname()}
     return params
 
 
