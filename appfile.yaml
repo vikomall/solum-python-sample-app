@@ -1,0 +1,11 @@
+version: 1
+name: python-sample-app
+description: Sample Python web app.
+artifacts:
+- name: python-sample-app
+  content:
+    href: https://github.com/rackspace-solum-samples/solum-python-sample-app.git
+  language_pack: python27
+  unittest_cmd: pip install -r test-requirements.txt; pep8 app.py
+  run_cmd: python app.py
+  ports: 80
