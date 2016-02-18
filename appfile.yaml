@@ -5,7 +5,7 @@ language_pack: python27
 source:
   repository: https://github.com/rackspace-solum-samples/solum-python-sample-app.git
 workflow_config:
-  unittest_cmd: pip install -r test-requirements.txt; pep8 app.py
+  test_cmd: pip install -r test-requirements.txt; pep8 app.py
   run_cmd: python app.py
 ports:
  - 80
